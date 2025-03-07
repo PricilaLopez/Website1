@@ -1,7 +1,4 @@
-cost panels = document.querySelectorAll('.panel')
-
-console.log("hello")
-console.log(panels)
+const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
     panel.addEventListener('click', ()=> {
