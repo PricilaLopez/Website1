@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-.box {
+.btn {
     display: flex;
     border: 0;
     border-radius: 8px;
@@ -19,14 +19,11 @@ body {
     width: 500px;
     cursor: pointer;
     position: absolute;
-    font-size: 15px;
+    font-size: 37px;
     background-color: pink;
     text-align: center;
     padding: 10px;
     color: white;
 }
 
-#element1 {
-    position: absolute;
-}
 
