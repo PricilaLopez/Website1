@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: pink;
+    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +20,9 @@ body {
     cursor: pointer;
     position: absolute;
     font-size: 35px;
-    background-color: grey;
+    background-color: pink;
     text-align: center;
     padding: 10px;
-    text-color: white;
+    color: white;
 }
 
