@@ -26,3 +26,7 @@ body {
     color: white;
 }
 
+#element1 {
+    position: absolute;
+}
+
