@@ -1,0 +1,36 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C7D9DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.btn {
+    font-family: 'Sour Gummy', sans-serif;
+    border-radius: 15px;
+    background-color: white;
+    margin: 10px;
+    padding:  5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
