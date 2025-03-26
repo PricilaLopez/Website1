@@ -16,10 +16,10 @@ start_btn.addEventListener('click', () => {
 
 choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
-        screens[1].classList.add('up')
         const img = btn.querySelector('img')
         const src = img.getAttribute('src')
         const alt = img.getAttribute('alt')
+        screens[1].classList.add('up')
         selected_insect = {src, alt}
         startGame()
         createInsect()
@@ -28,7 +28,7 @@ choose_insect_btns.forEach(btn => {
 
 
 
-function startGame (){
+function startGame () {
     setInterval(increaseTime, 1000)
 }
 
@@ -55,17 +55,15 @@ function createInsect() {
     const {x, y} = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
+    insect.addEventListener('click', catchInsect)
     game_container.appendChild(insect)
-
-
-    insect
 }
 
 
 function catchInsect() {
     increaseScore()
     this.classList.add('caught')
-    setTimeout( () => this.remove(), 2000)
+    setTimeout(() => this.remove(), 2000)
     addInsects()
 }
 
@@ -74,12 +72,12 @@ function addInsects() {
     setTimeout(createInsect, 1500)
 }
 
-function increaesScore() {
+function increaseScore() {
     score = score + 1
     if (score == 10) {
         message.classList.add('visible')
     }
-    scoreEl.HTML = `Score: ${score}`
+    scoreEl.innerHTML = `Score: ${score}`
 }
 
 function getRandomLocation() {
