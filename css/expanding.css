@@ -49,3 +49,26 @@ body {
     opacity: 1;
     transition: opacity .6s ease-in .4s;
 }
+
+.btn {
+    background-color: rgb(63, 125, 88, 0.75);
+    border: 0;
+    bottom: 20px;
+    left: 50%;
+    height: 50px;
+    width: 120px;
+    border-radius: 18px;
+    font-family: inherit;
+    font-size: 18px;
+    position: absolute;
+
+}
+
+a {
+    text-decoration: none;
+    color: #FAF1E6;
+}
+
+a:hover {
+    color: #F7A8C4;
+}
