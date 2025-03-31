@@ -7,6 +7,7 @@ const element6 = document.getElementById('element6')
 const element7 = document.getElementById('element7')
 const element8 = document.getElementById('element8')
 const element9 = document.getElementById('element9')
+container = document.querySelectorAll('.container')
 
 element9.addEventListener('click', ()=>{
     element1.style.backgroundColor = "rgb(247, 168, 196, 0.75)"
@@ -18,4 +19,9 @@ element9.addEventListener('click', ()=>{
     element7.style.backgroundColor = "rgb(247, 168, 196, 0.75)"
     element8.style.backgroundColor = "rgb(247, 168, 196, 0.75)"
     element9.style.backgroundColor = "rgb(247, 168, 196, 0.75)"
+})
+
+container.addEventListener('mouseover', ()=>{
+    element2.style.color = "green"
+    element2.style.backgroundColor = "blue"
 })
