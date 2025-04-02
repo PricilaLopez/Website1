@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0;
+
+}
+.green {
+    height: 100%;
+    width: 33%;
+    background-color: green;
+    position: absolute;
+}
+
+.white {
+    height: 100%;
+    width: 33%;
+    background-color: white;
+    position: relative;
+    left: 33%;
+    z-index: 0;
+}
+
+.red {
+    height: 100%;
+    width: 33%;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+}
+
+.circle1 {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    left: 48%;
+    z-index: 1;
+}
+
+.circle3L {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 108px;
+    left: 42%;
+    z-index: 1;
+}
+
+.circle4L {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 123px;
+    left: 36%;
+    z-index: 1;
+}
+
+.circle2L {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 142px;
+    left: 31%;
+    z-index: 1;
+}
+
+.circle5L {
+
+}
+
+.circle6L {
+
+}
+
+.circle7L {
+
+    z-index: 1;
+}
+
+/* Right (Left - 4) */
+
+.circle3R {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 108px;
+    right: 38%;
+    z-index: 1;
+}
+
+.circle4R {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 123px;
+    right: 32%;
+    z-index: 1;
+}
+
+.circle2R {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 142px;
+    right: 27%;
+    z-index: 1;
+}
