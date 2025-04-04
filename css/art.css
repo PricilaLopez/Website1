@@ -524,3 +524,38 @@ body {
     transform: rotate(-20deg);
 }
 
+.eagletail {
+    height: 95px;
+    width: 20px;
+    background-color: #4c250d;
+    border-radius: 30%;
+    position: absolute;
+    bottom: 280px;
+    right: 29%;
+    z-index: 1;
+    transform: rotate(-50deg);
+}
+
+.eagletail1 {
+    height: 85px;
+    width: 18px;
+    background-color: #4c250d;
+    border-radius: 30%;
+    position: absolute;
+    bottom: 275px;
+    right: 33%;
+    z-index: 1;
+    transform: rotate(-50deg);
+}
+
+.eagletail2 {
+    height: 70px;
+    width: 18px;
+    background-color: #4c250d;
+    border-radius: 30%;
+    position: absolute;
+    bottom: 275px;
+    right: 37%;
+    z-index: 1;
+    transform: rotate(-50deg);
+}
