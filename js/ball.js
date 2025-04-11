@@ -22,12 +22,10 @@ let ballXDirection = 1
 
 const scoreBoard = document.createElement('div')
 document.body.appendChild(scoreBoard)
-let score = 0 //Display the score and increase score by one every time the ball hits the paddle.
-let level = 1 //Display the level and increase the level by one every time the score increase by 10
-//As the levels increase, increase the ball speed
+let score = 0
+let level = 1
 // If the ball gets past your paddle, end the game
 //make the ball stop or disappear and then let the user know the game is over
-//Optional: sound effects, background music
 
 
 function moveBall() {
@@ -57,6 +55,14 @@ function moveBall() {
         (ballXDirection == -1)
     ) {
         ballXDirection = ballXDirection * -1
+        score = score + 1
+        scoreBoard.innerHTML = `Score: ${score} <br> Level: ${level}`
+
+        if (score % 10 == 9)
+        {
+            level = level + 1
+            ballSpeed = ballSpeed + 1
+        }
     }
 
 }
@@ -122,25 +128,13 @@ function animate() {
 animate()
 
 createscoreBoard()
-function createscoreBoard {
+function createscoreBoard() {
     scoreBoard.style.height = "50px"
     scoreBoard.style.width = "100px"
-    scoreBoard.style.backgroundColor = "green"
+    scoreBoard.style.backgroundColor = "red"
     scoreBoard.style.position = "absolute"
     scoreBoard.style.right = "50px"
-    scoreBoard.innerHTML = `Score: ${score}`
-}
-
-increaseScore()
-function increaseScore {
-    if (
-        (ballBottom >= LPaddleTop) &&
-        (ballTop <= LPaddleBottom) &&
-        (ballLeft <= LPaddleRight) &&
-        (ballXDirection == -1)
-    )
-    {
-        score = score + 1
-        scoreBoard.innerHTML = `Score: ${score}`
-    }
+    scoreBoard.style.color = "white"
+    scoreBoard.style.fontSize = "20px"
+    scoreBoard.innerHTML = `Score: ${score} <br> Level: ${level}`
 }
